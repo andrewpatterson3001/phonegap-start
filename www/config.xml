@@ -6,14 +6,14 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>Deez Nuts</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Got em!
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://github.com/andrewpatterson3001" email="andrew.patterson.3001@gmail.com">
+        Andrew Patterson
     </author>
 
     <!--
@@ -65,6 +65,9 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
+
+<!-- None used at this time -->
+
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
