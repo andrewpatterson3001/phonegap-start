@@ -107,6 +107,14 @@ $(document).on('pageshow', '#reposDetail', function(event) {
 
 function loadRepoDetail(owner,name) {
      $.ajax("https://api.github.com/repos/" + owner + "/" + name).done(function(data) {
+         var repo = data;
          console.log(data);
+
+         $('#repoName').html("<a href='" + repo.homepage + "'>" + repo.name + "</a>");
+         $('#description').text(repo.description);
+         $('#forks').html("<strong>Forks:</strong> " + repo.forks + "<br><strong>Watchers:</strong> " + repo.watchers);
+
+         $('#avatar').attr('src', repo.owner.avatar_url);
+         $('#ownerName').html("<strong>Owner:</strong> <a href='" + repo.owner.url + "'>" + repo.owner.login + "</a>");
      });
 }
